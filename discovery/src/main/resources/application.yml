@@ -7,7 +7,7 @@ spring:
 
 logging:
   level:
-    org.springframework.cloud.netflix.eureka: TRACE
+    org.springframework.cloud.netflix.eureka: DEBUG
     
 eureka:
   instance:

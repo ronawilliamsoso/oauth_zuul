@@ -11,7 +11,7 @@ spring:
 
 logging:
   level:
-    org.springframework.cloud.netflix.zuul: TRACE
+    org.springframework.cloud.netflix.zuul: DEBUG
       
 zuul:
   routes:  
@@ -36,11 +36,11 @@ security:
     password: root
   oauth2:
     client:
-      accessTokenUri: http://localhost:8765/uua/oauth/token
-      userAuthorizationUri: http://localhost:8765/uua/oauth/authorize
+      accessTokenUri: http://localhost:9999/uua/oauth/token
+      userAuthorizationUri: http://localhost:9999/uua/oauth/authorize
       clientAuthenticationScheme: form
     resource:
-      userInfoUri: http://localhost:8765/uaa/user
+      userInfoUri: http://localhost:9999/uaa/user
       preferTokenInfo: false  
   sessions: ALWAYS 
     
@@ -49,8 +49,8 @@ security:
 #    sso:
 #      loginPath: /uaa/login      
 #    client:
-#      accessTokenUri: http://localhost:8765/uua/oauth/token
-#      userAuthorizationUri: http://localhost:8765/uua/oauth/authorize
+#      accessTokenUri: http://localhost:9999/uua/oauth/token
+#      userAuthorizationUri: http://localhost:9999/uua/oauth/authorize
 #      clientId: acme
 #      clientSecret: secret
 #      clientAuthenticationScheme: form   

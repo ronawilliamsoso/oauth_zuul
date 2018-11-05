@@ -12,11 +12,11 @@ logging:
 security:
   user:
     name: root
-    password: password
+    password: root
   oauth2:
     resource:
 #      loadBalanced: true
-      userInfoUri: http://localhost:9998/user
+      userInfoUri: http://localhost:9999/user
       
 eureka:
   client:

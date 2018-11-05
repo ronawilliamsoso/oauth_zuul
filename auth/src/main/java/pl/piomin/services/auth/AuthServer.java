@@ -34,7 +34,8 @@ public class AuthServer {
 
 	@Bean
 	public DataSource dataSource() {
-		return DataSourceBuilder.create().url("jdbc:mysql://127.0.0.1:3306/wangwei?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC")
+		return DataSourceBuilder.create().url(
+				"jdbc:mysql://127.0.0.1:3306/wangwei?characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC")
 				.username("wangwei").password("wangwei").driverClassName("com.mysql.jdbc.Driver").build();
 	}
 
